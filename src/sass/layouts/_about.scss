@@ -24,16 +24,16 @@
     @media screen and (min-width: $tablet-size) {
         width: 384px;
         // height: 764px;
-    
+
         background-image: url(../images/images/home/people@2x.jpg);
         // margin-bottom: 30px;
-    
+
         @media screen and (min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
-          background-image: url(../images/images/home/people@2x.jpg);
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url(../images/images/home/people@2x.jpg);
         }
-      }
+    }
 
       @media screen and (min-width: $desktop-size) {
         width: 680px;

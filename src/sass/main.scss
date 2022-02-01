@@ -1,12 +1,10 @@
-@import './components/header';
-@import './components/hero';
-@import './components/services';
-@import './components/solutions';
-@import './components/cases';
-@import './components/blog';
-@import './components/team';
-@import './components/form';
-@import './components/footer';
-
-
-
+@import "./utils/variables";
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/services';
+@import './layouts/about';
+@import './layouts/cases';
+@import './layouts/blog';
+@import './layouts/team';
+@import './layouts/contact';
+@import './layouts/footer';

@@ -1,0 +1,16 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $tablet-size) {
+    //   display: flex;
+    }
+  }
+
+.about__photo {
+    width: 320px;
+    height: 220px;
+
+    background-image: url(../images//images/home/people.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

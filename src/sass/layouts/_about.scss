@@ -1,8 +1,15 @@
 .about {
     display: flex;
     flex-direction: column;
+    margin: 0px auto;
     @media screen and (min-width: $tablet-size) {
-    //   display: flex;
+        flex-direction: row;
+        min-width: 768px;
+        background-color: brown;
+    }
+    @media screen and (min-width: $desktop-size) {
+        flex-direction: row;
+        width: 1360px;
     }
   }
 
@@ -13,4 +20,37 @@
     background-image: url(../images//images/home/people.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+
+    @media screen and (min-width: $tablet-size) {
+        width: 384px;
+        // height: 764px;
+    
+        background-image: url(../images/images/home/people@2x.jpg);
+        // margin-bottom: 30px;
+    
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/images/home/people@2x.jpg);
+        }
+      }
+
+      @media screen and (min-width: $desktop-size) {
+        width: 680px;
+        height: 460px;
+    
+        background-image: url(../images/images/home/people@2x.jpg);
+        margin-right: 30px;
+        margin-bottom: 0;
+    
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+            background-image: url(../images/images/home/people@2x.jpg);
+        }
+      }
+}
+
+.about__text{
+    width: 320px;
 }

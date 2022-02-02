@@ -1,31 +1,207 @@
-@charset "UTF-8";
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
+.button {
+  display: inline-block;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  width: 167px;
+  height: 50px;
+  padding: 0px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+.button:focus, .button:hover {
+  outline: none;
 }
 
-.example .background {
-  height: 240px;
-  background-image: url("../images/demo.jpg");
-  background-size: cover;
-  background-position: center;
+header {
+  display: block;
+  background-color: aqua;
+}
+
+.hero {
+  display: block;
+  margin: 0px auto;
+  width: 320px;
+  height: 533px;
+  background-image: url(../images//images/home/showcase.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    background-color: yellow;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .hero {
+    width: 1360px;
+    height: 768px;
+    background-color: yellow;
+  }
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-width: 768px;
+    background-color: brown;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .about {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 1360px;
+  }
+}
+
+.about__photo {
+  width: 320px;
+  height: 220px;
+  background-image: url(../images//images/home/people.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .about__photo {
+    width: 384px;
+    background-image: url(../images/images/home/people@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .about__photo {
+    background-image: url(../images/images/home/people@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .about__photo {
+    width: 680px;
+    height: 460px;
+    background-image: url(../images/images/home/people@2x.jpg);
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1360px) and (min-device-pixel-ratio: 2), screen and (min-width: 1360px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1360px) and (min-resolution: 192dpi), screen and (min-width: 1360px) and (min-resolution: 2dppx) {
+  .about__photo {
+    background-image: url(../images/images/home/people@2x.jpg);
+  }
+}
+
+.about__text {
+  width: 320px;
+}
+
+.blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .blog {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-width: 768px;
+    background-color: blueviolet;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .blog {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 1360px;
+  }
+}
+
+.blog__photo {
+  width: 320px;
+  height: 220px;
+  background-image: url(../images//images/home/blog.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .blog__photo {
+    width: 384px;
+    height: 764px;
+    background-image: url(../images/images/home/blog@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .blog__photo {
+    background-image: url(../images/images/home/blog@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .blog__photo {
+    width: 680px;
+    height: 460px;
+    background-image: url(../images/images/home/blog@2x.jpg);
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1360px) and (min-device-pixel-ratio: 2), screen and (min-width: 1360px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1360px) and (min-resolution: 192dpi), screen and (min-width: 1360px) and (min-resolution: 2dppx) {
+  .blog__photo {
+    background-image: url(../images/images/home/blog@2x.jpg);
+  }
+}
+
+.blog__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 680px;
 }
 /*# sourceMappingURL=main.css.map */

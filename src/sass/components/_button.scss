@@ -1,0 +1,44 @@
+.button {
+    display: inline-block;
+    border: 1px solid $header-text;
+    border-radius: 5px;
+    width: 167px;
+    height: 50px;
+    padding: 0px;
+    // @include centeredFlex();
+  
+    font-family: $primeryFont;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    text-decoration: none;
+  
+    color: $header-text;
+  
+    background-color: transparent;
+  
+    cursor: pointer;
+  
+    // transition: background-color 250ms $cubic, color 250ms $cubic;
+  
+    &:focus,
+    &:hover {
+    //   background-color: $accentLinkColor;
+    //   color: $whiteTextColor;
+      outline: none;
+    }
+  }
+  
+  .button.colorReverse {
+    // color: $whiteTextColor;
+  }
+  
+  .button.colorReverse-header {
+    // color: $whiteTextColor;
+  
+    // @media screen and(max-width:$preTablet) {
+    //   color: $primeryTextColor;
+    // }
+  }

@@ -1,11 +1,12 @@
 .blog {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0px auto;
+    background-color: $main-blue;
     @media screen and (min-width: $tablet-size) {
         flex-direction: row;
-        min-width: 768px;
-        background-color: blueviolet;
+        width: 768px;
+        background-color: $main-blue;
     }
     @media screen and (min-width: $desktop-size) {
         flex-direction: row;
@@ -54,5 +55,39 @@
 .blog__text {
     display: flex;
     flex-direction: column;
-    width: 680px;
+    width: 320px;
+    margin: 30px;
 }
+
+.blog__text-main{
+    display: block;
+    font-family: $font-family;
+    color: $header-text;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.blog__text-heading{
+    display: block;
+    font-family: $font-family;
+    color: $header-text;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 38px;
+    line-height: 48px;
+}
+
+.blog__text-question{
+    display: block;
+    width: 240px;
+    font-family: $font-family;
+    color: $header-text;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+

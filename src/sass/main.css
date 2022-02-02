@@ -22,8 +22,36 @@
 }
 
 header {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: aqua;
+}
+
+.header__logo-text01 {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 32;
+  line-height: 42;
+}
+
+.header__logo-text02 {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 32;
+  line-height: 42;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 75px;
+  list-style: none;
 }
 
 .hero {
@@ -51,6 +79,65 @@ header {
   }
 }
 
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .services {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .services {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 1360px;
+  }
+}
+
+.services__item-heading {
+  width: 240px;
+  margin: 0px;
+  font-family: "Open Sans";
+  text-align: center;
+  color: #333333;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 26px;
+}
+
+.services__item-text {
+  display: block;
+  width: 240px;
+  margin: 0 50px;
+  font-family: "Open Sans";
+  text-align: center;
+  color: #333333;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,6 +147,9 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0px auto;
+  width: 320px;
+  font-family: "Open Sans";
+  background-color: #28A745;
 }
 
 @media screen and (min-width: 768px) {
@@ -68,8 +158,8 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    min-width: 768px;
-    background-color: brown;
+    width: 768px;
+    background-color: #28A745;
   }
 }
 
@@ -121,18 +211,52 @@ header {
 }
 
 .about__text {
+  display: block;
   width: 320px;
+  margin: 30px;
+}
+
+.about__text-date {
+  display: block;
+  font-family: "Open Sans";
+  color: #FFFFFF;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.about__text-heading {
+  display: block;
+  font-family: "Open Sans";
+  color: #FFFFFF;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.about__text-question {
+  width: 240px;
+  margin-bottom: 14px;
+  font-family: "Open Sans";
+  color: #FFFFFF;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .blog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0px auto;
+  background-color: #0284D0;
 }
 
 @media screen and (min-width: 768px) {
@@ -141,8 +265,8 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    min-width: 768px;
-    background-color: blueviolet;
+    width: 768px;
+    background-color: #0284D0;
   }
 }
 
@@ -202,6 +326,38 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 680px;
+  width: 320px;
+  margin: 30px;
+}
+
+.blog__text-main {
+  display: block;
+  font-family: "Open Sans";
+  color: #FFFFFF;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.blog__text-heading {
+  display: block;
+  font-family: "Open Sans";
+  color: #FFFFFF;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.blog__text-question {
+  display: block;
+  width: 240px;
+  font-family: "Open Sans";
+  color: #FFFFFF;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
 }
 /*# sourceMappingURL=main.css.map */

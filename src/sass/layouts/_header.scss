@@ -1,4 +1,26 @@
 header {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    
     background-color: aqua;
+}
+
+.header__logo-text01 {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 32;
+    line-height: 42;
+}
+
+.header__logo-text02 {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 32;
+    line-height: 42;
+}
+
+.header__menu {
+    display: flex;
+    height: 75px;
+    list-style: none;
 }

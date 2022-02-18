@@ -1,8 +1,19 @@
 header {
     display: flex;
     flex-direction: column;
-    
+    margin: 0px auto;
+    width: 320px;
     background-color: aqua;
+
+    @media screen and (min-width: $tablet-size) {
+        width: 768px;
+        background-color: yellow;
+    }
+    @media screen and (min-width: $desktop-size) {
+        width: 1360px;
+        height: 768px;
+        background-color: yellow;
+    }
 }
 
 .header__logo-text01 {

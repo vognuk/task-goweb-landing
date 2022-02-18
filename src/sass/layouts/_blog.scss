@@ -16,7 +16,7 @@
 
 .blog__photo {
     width: 320px;
-    height: 220px;
+    // height: 220px;
 
     background-image: url(../images//images/home/blog.jpg);
     background-repeat: no-repeat;
@@ -24,25 +24,25 @@
 
     @media screen and (min-width: $tablet-size) {
         width: 384px;
-        height: 764px;
+        // height: 764px;
 
         background-image: url(../images/images/home/blog@2x.jpg);
         // margin-bottom: 30px;
 
-        @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-            background-image: url(../images/images/home/blog@2x.jpg);
-        }
+            @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                background-image: url(../images/images/home/blog@2x.jpg);
+            }
         }
 
         @media screen and (min-width: $desktop-size) {
-        width: 680px;
-        height: 460px;
+            width: 680px;
+            // height: 517px;
 
-        background-image: url(../images/images/home/blog@2x.jpg);
-        margin-right: 30px;
-        margin-bottom: 0;
+            background-image: url(../images/images/home/blog@2x.jpg);
+            margin-right: 30px;
+            margin-bottom: 0;
 
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
@@ -57,6 +57,16 @@
     flex-direction: column;
     width: 320px;
     margin: 30px;
+
+    @media screen and (min-width: $desktop-size) {
+
+    }
+
+    @media screen and (min-width: $tablet-size) {
+        display: inline;
+        width: 680px;
+        // height: 517px;
+    }
 }
 
 .blog__text-main{

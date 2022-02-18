@@ -6,6 +6,7 @@
 
     font-family: $font-family;
     background-color: $main-green;
+
     @media screen and (min-width: $tablet-size) {
         flex-direction: row;
         width: 768px;
@@ -40,11 +41,11 @@
     }
 
       @media screen and (min-width: $desktop-size) {
-        width: 680px;
-        height: 460px;
+        width: 50%;
+        height: 517px;
     
         background-image: url(../images/images/home/people@2x.jpg);
-        margin-right: 30px;
+        // margin-right: 30px;
         margin-bottom: 0;
     
         @media screen and (min-device-pixel-ratio: 2),
@@ -59,6 +60,16 @@
   display: block;
   width: 320px;
   margin: 30px;
+
+  @media screen and (min-width: $tablet-size) {
+
+  }
+
+  @media screen and (min-width: $desktop-size) {
+    width: 680px;
+    margin: 84px 44px 0px 30px;
+
+  }
 }
 
 .about__text-date{

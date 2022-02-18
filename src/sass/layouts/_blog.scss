@@ -1,8 +1,10 @@
 .blog {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 0px auto;
     background-color: $main-blue;
+    font-family: $font-family;
+
     @media screen and (min-width: $tablet-size) {
         flex-direction: row;
         width: 768px;
@@ -16,7 +18,7 @@
 
 .blog__photo {
     width: 320px;
-    // height: 220px;
+    height: 220px;
 
     background-image: url(../images//images/home/blog.jpg);
     background-repeat: no-repeat;
@@ -38,11 +40,11 @@
 
         @media screen and (min-width: $desktop-size) {
             width: 680px;
-            // height: 517px;
+            height: 517px;
 
             background-image: url(../images/images/home/blog@2x.jpg);
-            margin-right: 30px;
-            margin-bottom: 0;
+            // margin-right: 30px;
+            // margin-bottom: 0;
 
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
@@ -63,9 +65,9 @@
     }
 
     @media screen and (min-width: $tablet-size) {
-        display: inline;
+        // display: inline;
         width: 680px;
-        // height: 517px;
+        height: 517px;
     }
 }
 

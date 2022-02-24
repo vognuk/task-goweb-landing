@@ -1,0 +1,96 @@
+.cards {
+    display: block; 
+    margin: 0px auto;
+    @media screen and (min-width: $tablet-size) {
+        width: 768px;
+    }
+    @media screen and (min-width: $desktop-size) {
+        width: 1360px;
+    }
+}
+
+.cards-heading {
+    display: block;
+    margin: 0px auto;
+}
+
+.cards__heading-firsttext {
+    display: block;
+    margin: 0px auto;
+
+    font-family: $font-family;
+    color: $text;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+}
+
+.cards__heading-maintext {
+    font-family: $font-family;
+    color: $text;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.cards__heading-thirdtext {
+    font-family: $font-family;
+    color: $text;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+
+    @media screen and (min-width: $tablet-size) {
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+    }
+    @media screen and (min-width: $desktop-size) {
+        text-align: center;
+    }
+}
+
+.cards__block {
+    
+}
+
+.cards__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 24px 48px 24px;
+    
+    @media screen and (min-width: $tablet-size) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: $desktop-size) {
+         flex-direction: row;
+         flex-wrap: wrap;
+    }
+}
+
+.cards__list-item {
+    width: 264px;
+    height: 176px;
+    background-color: antiquewhite;
+    margin: 4px;
+
+    @media screen and (min-width: $tablet-size) {
+        flex-direction: row;
+        width: 172px;
+        height: 115px;
+    }
+    @media screen and (min-width: $desktop-size) {
+         flex-direction: row;
+        width: 320px;
+        height: 214px;
+    }
+}
+
+.cards__case {
+    width: 100%;
+    height: 100%;
+}

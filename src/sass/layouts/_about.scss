@@ -1,7 +1,7 @@
 .about {
     display: flex;
     flex-direction: column;
-    margin: 0px auto;
+    margin: 0px auto 48px auto;
     width: 320px;
 
     font-family: $font-family;
@@ -15,6 +15,7 @@
     @media screen and (min-width: $desktop-size) {
         flex-direction: row;
         width: 1360px;
+        height: 460px;
     }
   }
 
@@ -24,7 +25,7 @@
 
     background-image: url(../images//images/home/people.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 
     @media screen and (min-width: $tablet-size) {
         width: 384px;
@@ -42,7 +43,7 @@
 
       @media screen and (min-width: $desktop-size) {
         width: 50%;
-        height: 517px;
+        height: 100%;
     
         background-image: url(../images/images/home/people@2x.jpg);
         // margin-right: 30px;
@@ -67,6 +68,7 @@
 
   @media screen and (min-width: $desktop-size) {
     width: 680px;
+    height: 100%;
     margin: 84px 44px 0px 30px;
 
   }

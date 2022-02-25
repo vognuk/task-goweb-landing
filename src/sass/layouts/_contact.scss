@@ -1,0 +1,59 @@
+.form__wrapper {
+    display: flex;
+    color: $form-background;
+}
+
+.form__photo {
+    display: none;
+
+    @media screen and (min-width: $tablet-size) {
+        display:block;
+        width: 264px;
+        height: 176px;
+        margin: 4px;
+        flex-direction: row;
+        width: 172px;
+        height: 115px;
+    }
+    @media screen and (min-width: $desktop-size) {
+        display:block;
+        flex-direction: row;
+        width: 320px;
+        height: 214px;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__heading {
+    font-family: $font-family; 
+    font-weight: 300;
+    font-style: normal;
+    font-size: 38px;
+    line-height: 48px;
+
+    color: $text;
+}
+
+.form__name-input {
+    width: 260px;
+    height: 40px;
+}
+
+.form__email-input {
+    width: 260px;
+    height: 40px;
+}
+
+.form__submit {
+    font-family: $font-family; 
+    
+    width: 260px;
+    height: 40px;
+
+    background: $main-green;
+    border-color: $main-green;
+}

@@ -61,17 +61,19 @@ margin-bottom: 37px;
         flex-wrap: wrap;
     }
     @media screen and (min-width: $desktop-size) {
-         flex-direction: row;
-         flex-wrap: wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
 .team__list-item {
+    display: block;
     width: 280px;
     height: 186px;
     background-color: antiquewhite;
     margin-bottom: 91px;
-
+    margin-left: 8px;
+    margin-right: 8px;
     @media screen and (min-width: $tablet-size) {
         flex-direction: row;
         width: 223px;
@@ -82,4 +84,33 @@ margin-bottom: 37px;
         width: 420px;
         height: 280px;
     }
+}
+
+
+.team__member-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team__member-name {
+    margin-top: 15px;
+
+    font-family: $font-family;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.team__member-responsibility {
+    margin-top: 15px;
+
+    font-family: $font-family;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
 }

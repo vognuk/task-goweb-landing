@@ -6,7 +6,8 @@
 
     background-image: url(../images//images/home/showcase.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    // background-size: 100%;
+    background-size: cover;
 
     @media screen and (min-width: $tablet-size) {
         width: 768px;
@@ -16,5 +17,78 @@
         width: 1360px;
         height: 768px;
         background-color: yellow;
+    }
+}
+
+.hero__text-main {
+    margin-top: 0px;
+
+    font-family: $font-family;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 52px;
+    line-height: 66px;
+    text-align: center;
+    color: $hero-text-two;
+
+    @media screen and (min-width: $tablet-size) {
+        ont-size: 55px;
+    }
+    @media screen and (min-width: $desktop-size) {
+
+    }
+}
+
+.hero__text {
+    margin: 0px auto;
+    font-family: $font-family;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 37px;
+    text-align: center;
+    color: $hero-text-two;
+
+    @media screen and (min-width: $tablet-size) {
+   
+    }
+    @media screen and (min-width: $desktop-size) {
+
+    }
+}
+
+.hero__button {
+    display: inline-block;
+    padding: auto;
+    margin: 0px auto;
+    border: 1px solid $header-text;
+    border-radius: 5px;
+    width: 167px;
+    height: 50px;
+    padding: 0px;
+    // @include centeredFlex();
+  
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+      
+    color: $header-text;
+  
+    background-color: $main-green;
+  
+    cursor: pointer;
+  
+    // transition: background-color 250ms $cubic, color 250ms $cubic;
+  
+    &:focus,
+    &:hover {
+    //   background-color: $accentLinkColor;
+    //   color: $whiteTextColor;
+      outline: none;
     }
 }

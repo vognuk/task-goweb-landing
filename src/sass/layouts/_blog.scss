@@ -22,7 +22,7 @@
 
     background-image: url(../images//images/home/blog.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 
     @media screen and (min-width: $tablet-size) {
         width: 384px;
@@ -39,12 +39,12 @@
         }
 
         @media screen and (min-width: $desktop-size) {
-            width: 680px;
-            height: 517px;
+            width: 740px;
+            height: 600px;
 
             background-image: url(../images/images/home/blog@2x.jpg);
             // margin-right: 30px;
-            // margin-bottom: 0;
+            margin-bottom: 0;
 
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),

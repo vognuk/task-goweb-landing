@@ -1,3 +1,80 @@
-<section>
-    <h2>Our Professional Team</h2>
+<section class="team">
+    <div class="team__heading">
+        <span class="team__heading-firsttext">Who we are</span>
+        <h2 class="team__heading-maintext">Our Professional Team</h2>
+        <span class="team__heading-thirdtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</span>
+    </div>
+    <div class="team__cards-block">
+        <ul class="team__list">
+            <li class="team__list-item">
+                <picture>
+                    <source
+                        srcset="
+                        ./images/images/team/person1.webp 480w,
+                        ./images/images/team/person1@2x.webp 1200w
+                        "
+                        type="image/webp"
+                    />
+                    <img
+                        class = "cards__case"
+                        srcset="
+                            ./images/images/team/person1.jpg 480w,
+                            ./images/images/team/person1@2x.jpg 1200w
+                        "
+                        src="./images/images/team/person1.jpg"
+                        alt="Person 1"
+                        sizes="(min-width: 480px) 25vw, (min-width: 768px) 50vw,  (min-width: 1200px) 100vw"
+                    />
+                </picture>
+                <h3 class="team__member-name">Joe Doe</h3>
+				<span class="team__member-responsibility">President</span>
+            </li>
+            <li class="team__list-item">
+                <picture>
+                    <source
+                        srcset="
+                        ./images/images/team/person2.webp 480w,
+                        ./images/images/team/person2@2x.webp 1200w
+                        "
+                        type="image/webp"
+                    />
+                    <img
+                        class = "cards__case"
+                        srcset="
+                            ./images/images/team/person2.jpg 480w,
+                            ./images/images/team/person2@2x.jpg 1200w
+                        "
+                        src="./images/images/team/person2.jpg"
+                        alt="Person 2"
+                        sizes="(min-width: 480px) 25vw, (min-width: 768px) 50vw,  (min-width: 1200px) 100vw"
+                    />
+                </picture>
+                <h3 class="team__member-name">Jane Doe</h3>
+				<span class="team__member-responsibility">Vice</span>
+            </li>
+            <li class="team__list-item">
+                <picture>
+                    <source
+                        srcset="
+                        ./images/images/team/person3.webp 480w,
+                        ./images/images/team/person3@2x.webp 1200w
+                        "
+                        type="image/webp"
+                    />
+                    <img
+                        class = "cards__case"
+                        srcset="
+                            ./images/images/team/person3.jpg 480w,
+                            ./images/images/team/person3@2x.jpg 1200w
+                        "
+                        src="./images/images/team/person3.jpg"
+                        alt="Person 3"
+                        sizes="(min-width: 480px) 25vw, (min-width: 768px) 50vw,  (min-width: 1200px) 100vw"
+                    />
+                </picture>
+                <h3 class="team__member-name">Steve Smith</h3>
+				<span class="team__member-responsibility">Marketing Head</span>
+            </li>
+        </ul>
+    </div>
 </section>

@@ -10,8 +10,10 @@
 }
 
 .cards-heading {
-    display: block;
-    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto;;
 }
 
 .cards__heading-firsttext {

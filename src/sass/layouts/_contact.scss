@@ -1,7 +1,15 @@
 .form__wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: $form-background;
+    margin: 0px auto;
+
+    @media screen and (min-width: $tablet-size) {
+        width: 768px;
+    }
+    @media screen and (min-width: $desktop-size) {
+        width: 1360px;
+    }
 }
 
 .form__photo {
@@ -12,13 +20,13 @@
         width: 384px;
         height: 349px;
         margin: 4px;
-        flex-direction: row;
+        // flex-direction: row;
         width: 172px;
         height: 115px;
     }
     @media screen and (min-width: $desktop-size) {
         display:block;
-        flex-direction: row;
+        // flex-direction: row;
         width: 680px;
         height: 460px;
     }
@@ -26,13 +34,29 @@
 
 .form-card {
     width: 100%;
-    height: 100%;  
+    height: 100%; 
+    
+    @media screen and (min-width: $tablet-size) {
+        width: 384px;
+        height: 349px;
+    }
+    @media screen and (min-width: $desktop-size) {
+        width: 680px;
+        height: 460px;
+    }
 }
 
 .form {
     display: flex;
     flex-direction: column;
     background-color: $form-background;
+
+    @media screen and (min-width: $tablet-size) {
+
+    }
+    @media screen and (min-width: $desktop-size) {
+        margin-right: 30px;
+    }
 }
 
 .form__heading {
@@ -59,6 +83,13 @@
 
     border-color: $header-text;
     border: 0px;
+
+    @media screen and (min-width: $tablet-size) {
+        width: 324px;
+    }
+    @media screen and (min-width: $desktop-size) {
+        width: 620px;
+    }
 }
 
 .form__email-input {
@@ -70,6 +101,13 @@
 
     border-color: $header-text;
     border: 0px;
+
+    @media screen and (min-width: $tablet-size) {
+        width: 324px;
+    }
+    @media screen and (min-width: $desktop-size) {
+        width: 620px;
+    }
 }
 
 .form__submit {
@@ -81,5 +119,13 @@
     font-family: $font-family; 
     background: $main-green;
     border-color: $main-green;
+    border-radius: 5px;
     border: 0px;
+
+    @media screen and (min-width: $tablet-size) {
+        width: 324px;
+    }
+    @media screen and (min-width: $desktop-size) {
+        width: 620px;
+    }
 }

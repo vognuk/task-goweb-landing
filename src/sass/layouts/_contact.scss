@@ -38,6 +38,7 @@
 .form__heading {
     display: block;
     width: 150px;
+    margin-top: 26px;
     margin-bottom: 49px;
 
     font-family: $font-family; 
@@ -80,4 +81,5 @@
     font-family: $font-family; 
     background: $main-green;
     border-color: $main-green;
+    border: 0px;
 }

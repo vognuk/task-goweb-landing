@@ -1,6 +1,7 @@
 .form__wrapper {
     display: flex;
-    color: $form-background;
+    justify-content: center;
+    background-color: $form-background;
 }
 
 .form__photo {
@@ -8,8 +9,8 @@
 
     @media screen and (min-width: $tablet-size) {
         display:block;
-        width: 264px;
-        height: 176px;
+        width: 384px;
+        height: 349px;
         margin: 4px;
         flex-direction: row;
         width: 172px;
@@ -18,17 +19,27 @@
     @media screen and (min-width: $desktop-size) {
         display:block;
         flex-direction: row;
-        width: 320px;
-        height: 214px;
+        width: 680px;
+        height: 460px;
     }
+}
+
+.form-card {
+    width: 100%;
+    height: 100%;  
 }
 
 .form {
     display: flex;
     flex-direction: column;
+    background-color: $form-background;
 }
 
 .form__heading {
+    display: block;
+    width: 150px;
+    margin-bottom: 49px;
+
     font-family: $font-family; 
     font-weight: 300;
     font-style: normal;
@@ -39,21 +50,34 @@
 }
 
 .form__name-input {
+    display: block;
+    margin-bottom: 36px;
     width: 260px;
     height: 40px;
+    font-family: $font-family; 
+
+    border-color: $header-text;
+    border: 0px;
 }
 
 .form__email-input {
+    display: block;
+    margin-bottom: 53px;
     width: 260px;
     height: 40px;
+    font-family: $font-family; 
+
+    border-color: $header-text;
+    border: 0px;
 }
 
 .form__submit {
-    font-family: $font-family; 
-    
+    margin-bottom: 30px;
+        
     width: 260px;
     height: 40px;
 
+    font-family: $font-family; 
     background: $main-green;
     border-color: $main-green;
 }

@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $text;
+    height: 110px;
+    color: $header-text;
+
+    @media screen and (min-width: $tablet-size) {
+    
+    }
+    @media screen and (min-width: $desktop-size) {
+      
+    }
+}
+
+.footer__icon {
+    font-size: 31px;
+    // color: $text;
+    color: $header-text;
+}
